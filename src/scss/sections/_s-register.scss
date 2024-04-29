@@ -1,0 +1,211 @@
+.kvv{
+  .register{
+    position: relative;
+    .cost-wrap{
+      border-radius: 7px;
+      background: rgba(143,210,233,0.3);
+      padding: 25px 35px 20px;
+      margin-bottom: 27px;
+      .left{
+        width: calc(100% - 155px);
+        position: relative;
+        padding-right: 15px;
+        p{
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: left;
+          margin: 0 0 10px;
+        }
+        p:last-child{
+          margin-bottom: 0;
+        }
+        &:after{
+          position: absolute;
+          top: 0;
+          content: '';
+          height: 100%;
+          width: 1px;
+          background: rgba(23,29,49,0.1);
+          right: 0;
+        }
+      }
+      .right{
+        width: 150px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding: 3px 6px 0 0;
+        .price{
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 32px;
+          text-align: right;
+          margin-bottom: -5px;
+          span{
+            display: inline-block;
+            margin-right: 5px;
+            position: relative;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 32px;
+            top: -7px;
+          }
+        }
+        .small{
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: right;
+        }
+      }
+    }
+    .bg-icon{
+      right: 120px;
+      img{
+        position: absolute;
+        bottom: 110px;
+        right: 0;
+        transition: all .4s ease;
+      }
+    }
+
+    .info{
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translate(-50%,0);
+      border-radius: 22px;
+      background: #8fd2e9;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      padding: 0 47px;
+      p{
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+        margin: 0!important;
+      }
+    }
+    .container-fluid {
+      max-width: 1160px;
+    }
+    .bg{
+      bottom: 200px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    h2{
+      font-size: 44px;
+      font-weight: 500;
+      line-height: 51px;
+      text-align: center;
+      margin: 0 auto 57px;
+      color: #fff;
+      width: 460px;
+      max-width: 100%;
+    }
+    .form-wrap{
+      padding: 0;
+      .wrap{
+        border-radius: 10px;
+        background: #ffffff;
+        background-blend-mode: normal;
+        box-shadow: 0px 2px 34px 10px rgba(0,0,0,0.11);
+        margin: auto;
+        width: 665px;
+        padding: 50px 50px 45px;
+        text-align: center;
+      }
+    }
+  }
+
+  .pb-45{
+    padding-bottom: 45px!important;
+  }
+}
+
+@media (max-width: 1199px){
+  .kvv .register h2, .kvv .register .h2{
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+
+@media (max-width: 991px){
+  .kvv .register h2, .kvv .register .h2 {
+    font-size: 36px;
+  }
+  .kvv .register .bg-icon{
+    right: 0;
+  }
+}
+
+@media (max-width: 767px){
+  .kvv .register .form-wrap .wrap{
+    width: calc(100vw - 40px);
+    padding: 40px 25px 35px;
+  }
+  .kvv .register .cost-wrap .right {
+    width: 130px;
+  }
+  .kvv .register .cost-wrap .left {
+    width: calc(100% - 150px);
+  }
+}
+
+@media (max-width: 575px){
+  .kvv .faq h2, .kvv .faq .h2{
+    font-size: 20px;
+  }
+  .kvv .faq .accordion-header button {
+    padding: 5px 45px 5px 15px;
+    line-height: 20px;
+  }
+  .kvv .faq .accordion-header button span {
+    margin-top: -15px;
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    right: 10px;
+  }
+  .kvv .faq .accordion-body {
+    padding: 15px;
+  }
+  .kvv .register .cost-wrap{
+    padding: 15px;
+  }
+  .kvv .register .cost-wrap .left{
+    width: 100%;
+    padding: 0 0 10px;
+    border-bottom: 1px solid rgba(23, 29, 49, 0.1);
+    text-align: center;
+    margin-bottom: 10px;
+    &:after{
+      display: none;
+    }
+  }
+  .kvv .register .cost-wrap .right{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .kvv .register .cost-wrap .right .price, .kvv .register .cost-wrap .right .small{
+    text-align: center;
+  }
+  .kvv .register .cost-wrap .left p{
+    text-align: center;
+  }
+  .kvv .register h2, .kvv .register .h2 {
+    font-size: 30px;
+  }
+}
+

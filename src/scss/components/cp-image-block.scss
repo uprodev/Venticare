@@ -1,0 +1,47 @@
+.cp-image-block {
+  max-width: 585px;
+
+  .inner {
+    position: relative;
+    padding: 97.6% 0 0;
+  }
+
+  .blur-mode {
+    position: absolute;
+
+    &:after {
+      content: "";
+      @include abs;
+      @extend .rounded;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44.94%, rgba(0, 0, 0, 0.56) 100%) 50% / cover no-repeat;
+    }
+
+    &:first-child {
+      width: 51%;
+      height: 31.9%;
+      left: 0;
+      top: 11.9%;
+    }
+
+    &:nth-child(2) {
+      width: 34.2%;
+      height: 43.7%;
+      left: 54.2%;
+      top: 0;
+    }
+
+    &:nth-child(3) {
+      width: 51%;
+      height: 53.6%;
+      left: 8.55%;
+      top: 46.4%;
+    }
+
+    &:nth-child(4) {
+      width: 38.3%;
+      height: 36.25%;
+      left: 62%;
+      top: 46.4%;
+    }
+  }
+}

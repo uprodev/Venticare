@@ -1,0 +1,185 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .pagination-prev,
+  .pagination-next {
+    display: flex;
+    align-items: center;
+
+    &.pagination-prev {
+      margin-right: 12px;
+    }
+
+    &.pagination-next {
+      margin-left: 12px;
+    }
+
+    span {
+      display: none;
+      color: #568893;
+      font-family: $font-family-inter;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    svg {
+      display: block;
+      width: 40px;
+      height: 40px;
+
+      .rect {
+        transition: all 0.2s;
+      }
+    }
+
+    &:hover {
+      span {
+        text-decoration: underline;
+      }
+
+      svg {
+        .rect {
+          fill: #e2f7ff;
+        }
+      }
+    }
+  }
+
+  .rank-switch {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      margin: 2px 8px;
+
+      a {
+        display: block;
+      }
+    }
+
+    svg {
+      display: block;
+      width: 18px;
+      height: 18px;
+
+      path {
+        transition: all 0.2s;
+      }
+    }
+
+    &[data-rank="rare"] {
+      svg path {
+        fill: #07cfff;
+        stroke: #07a8ce;
+      }
+
+      a:hover,
+      a.active {
+        svg path {
+          fill: #88e1ff;
+          stroke: #34b9ff;
+        }
+      }
+    }
+
+    &[data-rank="uncommon"] {
+      svg path {
+        fill: #37ff92;
+        stroke: #00c693;
+      }
+
+      a:hover,
+      a.active {
+        svg path {
+          fill: #94ffc5;
+          stroke: #17e168;
+        }
+      }
+    }
+
+    &[data-rank="epic"] {
+      svg path {
+        fill: #bf87fe;
+        stroke: #8d65f8;
+      }
+
+      a:hover,
+      a.active {
+        svg path {
+          fill: #d3abff;
+          stroke: #a07dfe;
+        }
+      }
+    }
+
+    &[data-rank="legendary"] {
+      svg path {
+        fill: #fbed67;
+        stroke: #dfb20f;
+      }
+
+      a:hover,
+      a.active {
+        svg path {
+          fill: #fff48a;
+          stroke: #ffcc36;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .pagination-prev,
+    .pagination-next {
+      span {
+        display: block;
+        opacity: 0;
+      }
+      &.active {
+        span {
+          opacity: 1;
+        }
+      }
+
+      &.pagination-prev {
+        span {
+          margin-right: 40px;
+        }
+      }
+
+      &.pagination-next {
+        span {
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .pagination-prev,
+    .pagination-next {
+      &.pagination-prev {
+        margin-right: 8px;
+      }
+
+      &.pagination-next {
+        margin-left: 8px;
+      }
+    }
+
+    .rank-switch {
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

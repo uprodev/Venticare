@@ -1,0 +1,77 @@
+.cp-article-author {
+  border-radius: 20px 20px 12px 12px;
+  background: $dark;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.04);
+  padding: 0 0 13px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 29.4%;
+    bottom: 0;
+    background: url(../images/bg/line-card-author.svg) 0 0 / cover no-repeat;
+    width: 72px;
+    height: 13px;
+  }
+
+  .cp-article-author-image {
+    .blur-mode {
+      border-radius: 12px 12px 0 0;
+      height: 200px;
+    }
+  }
+
+  .cp-article-author-text {
+    padding: 20px;
+    background: #f0f0f0;
+
+    h4 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    border-radius: 20px 20px 12px 20px;
+    padding: 0;
+
+    &:after {
+      left: 300px;
+    }
+
+    .cp-article-author-image {
+      flex-shrink: 0;
+
+      .blur-mode {
+        border-radius: 12px 0 0 12px;
+        height: 100%;
+        width: 200px;
+      }
+    }
+
+    .cp-article-author-text {
+      border-radius: 0 12px 0 0;
+      margin: 0 0 13px 0;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &:after {
+      left: 359px;
+    }
+
+    .cp-article-author-image {
+      .blur-mode {
+        width: 244px;
+      }
+    }
+
+    .cp-article-author-text {
+      padding: 40px 58px 27px 40px;
+    }
+  }
+}

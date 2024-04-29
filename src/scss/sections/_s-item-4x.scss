@@ -1,0 +1,110 @@
+.kvv{
+  .item-4x{
+    padding: 90px 0 75px;
+    background: #f3f5f7;
+    .content{
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px 45px;
+      padding: 0 32px;
+    }
+    .item{
+      position: relative;
+      color: #050038;
+      text-align: left;
+      height: fit-content;
+      .bg{
+        border-radius: 12px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .wrap{
+        padding: 22px 30px 20px;
+      }
+      .label{
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 15px;
+        margin-bottom: 6px;
+      }
+      h6{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        margin-bottom: 14px;
+      }
+      p{
+        margin: 0;
+        a{
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 1.2;
+          img{
+            margin-left: 5px;
+            transition: all .4s ease;
+            filter: invert(1);
+          }
+          &:hover{
+            img{
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+    .item-bg{
+      text-align: center;
+      color: #fff;
+      h6{
+        margin-bottom: 9px;
+      }
+      p a img{
+        filter: none;
+      }
+      .wrap{
+        padding: 50px 30px 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px){
+  .kvv .item-4x .item .wrap {
+    padding: 22px 25px 20px;
+  }
+  .kvv .item-4x .item-bg .wrap {
+    padding: 50px 30px 60px;
+  }
+}
+
+@media (max-width: 1199px){
+  .kvv .item-4x .item .wrap {
+    padding: 22px 2px 20px;
+  }
+  .kvv .item-4x .content{
+    grid-gap: 20px 20px;
+  }
+  .kvv .item-4x .item-bg .wrap {
+    padding: 50px 30px 60px;
+  }
+}
+
+@media (max-width: 991px){
+  .kvv .item-4x .content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+  .kvv .item-4x{
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 575px){
+  .kvv .item-4x .content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+  }
+}

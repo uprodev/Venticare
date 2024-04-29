@@ -1,0 +1,41 @@
+.cp-news-list {
+  h4 {
+    margin: 0 0 5px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    h4 {
+      margin: 0 0 15px;
+    }
+  }
+}
+
+.cp-news-list-item {
+  border-bottom: 1px solid rgba($gray-100, 0.22);
+  padding: 20px 0;
+
+  &:last-child {
+    padding-bottom: 0;
+    border: none;
+  }
+
+  figure {
+    width: 122px;
+    margin: 0 22px 0 0;
+
+    img {
+      @extend .img-fluid;
+    }
+  }
+
+  .fs-14 {
+    img {
+      margin-left: 10px;
+    }
+  }
+}

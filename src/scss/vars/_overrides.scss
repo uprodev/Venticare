@@ -1,0 +1,220 @@
+$font-family-base: "Poppins", sans-serif;
+$font-family-serif: "PT Serif", serif;
+$font-family-inter: "Inter", sans-serif;
+$black: #000;
+$white: #fff;
+
+$text: #050038;
+
+$primary: #42bfea;
+$secondary: #8fd2e9;
+$light: #f8f9fa;
+$dark: #050038;
+$green: #87cd9b;
+
+$gray-100: #dedede;
+$gray-200: #d9d9d9;
+$gray-300: #adb5bd;
+$gray-400: #adb5bd;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $light,
+  "dark": $dark,
+  "white": $white,
+  "gray": $gray-400,
+);
+
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
+$font-size-base: 1.125rem;
+$line-height-base: 1.77778;
+
+$font-size-base-md: 1rem;
+
+$font-size-base-sm: 0.75rem;
+$line-height-base-sm: 2.5;
+
+$h1-font-size: 2.75rem;
+$h2-font-size: 2.1875rem;
+$h3-font-size: 1.5625rem;
+$h4-font-size: 1.125rem;
+$h5-font-size: 0.8125rem;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1400px,
+  xxxl: 1600px,
+);
+
+$spacer: 1rem;
+$enable-negative-margins: true;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 0.75,
+  5: $spacer * 1.5625,
+  10: 10px,
+  14: 14px,
+  20: 20px,
+  25: 25px,
+  27: 27px,
+  28: 28px,
+  30: 30px,
+  35: 35px,
+  38: 38px,
+  40: 40px,
+  44: 44px,
+  47: 47px,
+  50: 50px,
+  56: 56px,
+  60: 60px,
+  63: 63px,
+  66: 66px,
+  70: 70px,
+  77: 77px,
+  80: 80px,
+  83: 83px,
+  87: 87px,
+  90: 90px,
+  95: 95px,
+  100: 100px,
+  103: 103px,
+  110: 110px,
+  116: 116px,
+  120: 120px,
+  126: 126px,
+  130: 130px,
+  134: 134px,
+  142: 142px,
+  146: 146px,
+  150: 150px,
+  157: 157px,
+  175: 175px,
+  187: 187px,
+  195: 195px,
+  200: 200px,
+);
+
+$gutters: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  26: 26px,
+  30: 30px,
+  33: 33px,
+  40: 40px,
+  60: 60px,
+  47: 47px,
+  77: 77px,
+  90: 90px,
+  174: 174px,
+);
+
+$border-radius: 0.75rem;
+$border-radius-sm: 0.3125rem;
+$border-radius-lg: 0.9375rem;
+
+//buttons
+$btn-padding-y: 0.625rem;
+$btn-padding-x: 1.8125rem;
+$btn-font-family: $font-family-base;
+$btn-font-size: 0.875rem;
+$btn-line-height: 1.857;
+
+$btn-padding-y-sm: 0.31rem;
+$btn-padding-x-sm: 1.375rem;
+$btn-font-size-sm: 0.8125rem;
+
+$btn-border-width: 1px;
+
+$btn-font-weight: 500;
+$btn-box-shadow: none;
+$btn-active-box-shadow: none;
+
+$btn-border-radius: 4px;
+$btn-border-radius-sm: 19.5px;
+
+$modal-dialog-margin: 0rem;
+
+$modal-content-border-width: 0;
+$modal-content-border-radius: 0;
+$modal-content-box-shadow-xs: none;
+$modal-content-box-shadow-sm-up: none;
+
+$modal-header-border-width: 0;
+
+$input-btn-padding-y: 1rem;
+$input-btn-padding-x: 1rem;
+$input-btn-line-height: 1.3;
+$input-btn-font-family: $font-family-base;
+$input-btn-font-size: 0.8125rem;
+$input-btn-border-width: 1px;
+
+$input-btn-padding-y-lg: 1.0625rem;
+$input-btn-padding-x-lg: 1.0625rem;
+$input-btn-font-size-lg: 0.9375rem;
+
+$input-btn-padding-y-sm: 0.78rem;
+$input-btn-padding-x-sm: 1.125rem;
+$input-btn-font-size-sm: $input-btn-font-size;
+
+$input-font-weight: 500;
+
+$input-color: $dark;
+$input-border-color: #f2f2f2;
+$input-box-shadow: none;
+
+$input-border-radius: 7px;
+$input-border-radius-sm: 4px;
+$input-border-radius-lg: 7px;
+
+$input-focus-border-color: $input-border-color;
+$input-focus-box-shadow: none;
+
+$input-placeholder-color: $input-color;
+
+$form-check-input-width: 1rem;
+$form-check-padding-start: $form-check-input-width + 0.5rem;
+$form-check-margin-bottom: 0.125rem;
+$form-check-label-color: $black;
+$form-check-label-cursor: pointer;
+
+$form-check-input-bg: $white;
+$form-check-input-border: 1px solid $black;
+$form-check-input-border-radius: 3px;
+$form-check-radio-border-radius: 50%;
+$form-check-input-focus-border: $black;
+$form-check-input-focus-box-shadow: none;
+
+$form-check-input-checked-bg-color: $black;
+
+// breadcrumbs
+$breadcrumb-font-size: 0.8125rem;
+$breadcrumb-item-padding-x: 0.3rem;
+$breadcrumb-margin-bottom: 1.25rem;
+$breadcrumb-divider-color: rgba($dark, 0.2676);
+$breadcrumb-active-color: rgba($dark, 0.2676);
+$breadcrumb-divider: quote(">");
+$breadcrumb-divider-flipped: $breadcrumb-divider;
+$breadcrumb-border-radius: null;
+
+// progress
+$progress-height: 2px;
+$progress-bg: rgba(5, 0, 56, 0.1);
+$progress-border-radius: 2px;
+$progress-box-shadow: none;
+$progress-bar-bg: $dark;
+
+$modal-content-border-radius: 24px;
+$modal-sm: 423px;

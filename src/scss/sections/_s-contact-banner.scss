@@ -1,0 +1,43 @@
+.s-contact-banner {
+  position: relative;
+
+  .s-contact-banner-image {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 100px;
+
+    &:before {
+      content: "";
+      @include abs-center;
+      width: 191%;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+      background: rgba(66, 191, 234, 0.2);
+      transform: translate3d(-74%, -60%, 0);
+    }
+
+    &:after {
+      content: "";
+      @include abs-center;
+      width: 151%;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+      background: rgba(#42bfea, 0.5285);
+      mask: url(../images/mask/mask-circle-lined.png) 0 0 / cover no-repeat;
+      transform: translate3d(-8%, -77%, 0);
+    }
+
+    figure {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .s-contact-banner-image {
+      width: 152px;
+    }
+  }
+}

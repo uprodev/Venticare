@@ -1,0 +1,116 @@
+.s-person-banner {
+  background-color: $dark;
+  padding: 40px 0 0;
+  position: relative;
+
+  .s-person-banner-intro {
+    padding: 40px 0;
+
+    .cp-socials {
+      a {
+        background-color: rgba($white, 0.09);
+      }
+    }
+
+    h3 {
+      margin: 12px 0 5px;
+    }
+    .s-person-banner-title {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+  }
+
+  .s-person-banner-text {
+    background-color: $white;
+    padding: 40px 0 0;
+
+    h4 {
+      font-weight: 500;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    background-color: transparent;
+    padding: 0;
+
+    .s-person-banner-image {
+      position: absolute;
+      left: 0;
+      top: 40px;
+      right: 0;
+    }
+
+    .s-person-banner-intro {
+      padding: 0;
+
+      .inner {
+        position: relative;
+        z-index: 2;
+        padding: 50px 0;
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background: url(../images/bg/line-card-author.svg) 0 0 / cover no-repeat;
+          width: 72px;
+          height: 14px;
+        }
+      }
+    }
+
+    .s-person-banner-text {
+      background-color: transparent;
+
+      .inner {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .s-person-banner-image {
+      top: 72px;
+    }
+
+    .s-person-banner-intro {
+      .inner {
+        padding: 95px 0 51px;
+      }
+    }
+
+    .s-person-banner-text {
+      padding: 55px 0 0;
+
+      h4 {
+        font-size: 20px;
+        line-height: 2.1;
+        margin: 0 0 1.85rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    .container-fluid {
+      padding-left: 65px;
+      padding-right: 152px;
+    }
+
+    .s-person-banner-image {
+      .blur-mode {
+        transform: translateX(22px);
+      }
+    }
+
+    .s-person-banner-intro,
+    .s-person-banner-text {
+      .inner {
+        margin-left: 60px;
+      }
+    }
+  }
+}

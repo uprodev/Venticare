@@ -1,0 +1,88 @@
+.cp-authors-carousel {
+  position: relative;
+  margin: 0 -16px;
+  padding: 0 50px;
+  overflow: hidden;
+
+  .cp-author-card {
+    height: 100%;
+  }
+
+  .swiper {
+    overflow: visible;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 30px;
+    height: 30px;
+    background-color: $white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    transform: translateY(-50%);
+
+    &.swiper-button-prev {
+      left: 10px;
+    }
+
+    &.swiper-button-next {
+      right: 10px;
+    }
+
+    svg {
+      display: block;
+      width: 12px;
+      height: auto;
+      opacity: 0.6;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    margin: 0;
+    padding: 0 90px;
+    overflow: visible;
+
+    .swiper {
+      overflow: hidden;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 58px;
+      height: 58px;
+
+      &.swiper-button-prev {
+        left: 0;
+      }
+
+      &.swiper-button-next {
+        right: 0;
+      }
+
+      svg {
+        width: 24px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    margin: 0;
+    padding: 0 100px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      &.swiper-button-prev {
+        left: -52px;
+      }
+
+      &.swiper-button-next {
+        right: -52px;
+      }
+    }
+  }
+}

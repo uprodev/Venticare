@@ -1,0 +1,134 @@
+.s-article {
+  .col-left {
+    padding-bottom: 40px;
+
+    .cp-author-card {
+      margin: 0 0 20px;
+    }
+
+    .cp-subscription-box {
+      margin: 0 0 27px;
+    }
+  }
+
+  .col-main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .article-time {
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+    }
+
+    & > h3 {
+      margin: 0 0 20px;
+    }
+
+    & > h4 {
+      margin: 30px 0 17px;
+    }
+    .cp-article-image,
+    .cp-article-author,
+    .cp-banner {
+      margin: 30px 0;
+    }
+
+    blockquote {
+      font-family: $font-family-serif;
+      margin: 30px 0;
+      @include font-size(1.5625rem);
+      line-height: 1.68;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .cp-article-item {
+      margin: 30px 0;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .col-main {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .col-left {
+      .cp-author-card {
+        .inner {
+          padding: 22px 24px 15px;
+          flex-direction: row;
+          align-items: center;
+          justify-content: initial;
+        }
+        .cp-author-card-image {
+          width: 67px;
+          margin: 0 11px 0 0;
+        }
+        h4 {
+          font-size: 14px;
+          line-height: 1.6;
+          margin: 0;
+        }
+
+        .btn {
+          margin: 8px 0 0;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 40px 0;
+    --col-left-width: 300px;
+
+    .col-left {
+      width: var(--col-left-width);
+    }
+
+    .col-main {
+      width: calc(100% - var(--col-left-width));
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 70px 0 63px;
+    --col-left-width: 350px;
+
+    .col-main {
+      & > h3 {
+        margin: 0 0 28px;
+      }
+
+      & > h4 {
+        margin: 40px 0 17px;
+      }
+
+      .cp-article-image,
+      .cp-article-item,
+      blockquote,
+      .cp-article-author,
+      .cp-banner {
+        margin: 40px 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    --col-left-width: 440px;
+
+    .container-fluid {
+      padding-left: 60px;
+      padding-right: 165px;
+    }
+
+    .cp-tags-list {
+      margin: 58px 0 0;
+    }
+  }
+}

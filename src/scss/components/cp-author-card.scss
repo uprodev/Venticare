@@ -1,0 +1,60 @@
+.cp-author-card {
+  background-color: $dark;
+  padding: 0 0 14px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.04);
+  position: relative;
+  border-radius: 20px 20px 12px 12px;
+  display: flex;
+  flex-direction: column;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 29.4%;
+    bottom: 0;
+    background: url(../images/bg/line-card-author.svg) no-repeat;
+    width: 72px;
+    height: 14px;
+  }
+
+  .inner {
+    @extend .rounded-top;
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cp-author-card-image {
+    width: 90px;
+    margin: 0 0 9px;
+
+    img {
+      @extend .img-fluid;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  h4 {
+    margin: 0 0 5px;
+    line-height: 1.35;
+  }
+
+  .btn {
+    font-weight: 700;
+    margin: 23px 0 0;
+    align-self: flex-start;
+  }
+
+  @include media-breakpoint-up(xl) {
+    .inner {
+      padding: 36px 41px;
+    }
+  }
+}

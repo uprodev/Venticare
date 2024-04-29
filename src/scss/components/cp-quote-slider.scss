@@ -1,0 +1,93 @@
+.cp-quote-slider {
+  position: relative;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 30px;
+    height: 30px;
+    background-color: rgba($white, 1);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    z-index: 9;
+
+    &.swiper-button-prev {
+      left: 10px;
+    }
+
+    &.swiper-button-next {
+      right: 10px;
+    }
+
+    svg {
+      display: block;
+      width: 12px;
+      height: auto;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 0 150px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 58px;
+      height: 58px;
+
+      &.swiper-button-prev {
+        left: 35px;
+      }
+
+      &.swiper-button-next {
+        right: 35px;
+      }
+
+      svg {
+        width: 24px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    transform: translateY(42px);
+
+    &:before {
+      content: "";
+      width: 19.18vw;
+      height: 19.18vw;
+      max-width: 230px;
+      max-height: 230px;
+      border-radius: 100%;
+      position: absolute;
+      left: 60px;
+      top: -40px;
+      background: rgba($white, 0.2469);
+      mask: url(../images/mask/mask-circle-lined.png) 0 0 / cover no-repeat;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: 190px;
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    width: 1150px;
+    padding: 0 104px;
+    margin: auto;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      &.swiper-button-prev {
+        left: 0;
+      }
+
+      &.swiper-button-next {
+        right: 0;
+      }
+    }
+  }
+}

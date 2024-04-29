@@ -1,0 +1,11 @@
+.s-shop-banner {
+  @include media-breakpoint-up(lg) {
+    h1 {
+      font-size: 25px;
+      line-height: 42px;
+      font-weight: 400;
+      max-width: 25em;
+      margin: auto;
+    }
+  }
+}

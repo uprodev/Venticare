@@ -1,0 +1,120 @@
+.kvv{
+  .blog{
+    padding: 105px 0 110px;
+    h3{
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    .top{
+      margin-bottom: 20px;
+      .btn{
+        font-size: 16px;
+      }
+    }
+    .container-fluid{
+      max-width: 1460px;
+    }
+    .content{
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px 20px;
+    }
+    .item{
+      figure{
+        overflow: hidden;
+        border-radius: 12px;
+        height: 305px;
+        position: relative;
+        .icon-wrap{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          z-index: 2;
+          img{
+            transition: all .4s ease;
+          }
+        }
+        &>a>img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        a:hover{
+          .icon-wrap{
+            img{
+              transform: scale(1.03);
+            }
+          }
+        }
+      }
+      .text{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        h6{
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 25px;
+          margin-bottom: 0;
+        }
+        .link{
+          display: flex;
+          align-items: center;
+          a{
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.2;
+            display: inline-block;
+            img{
+              margin-left: 5px;
+              transition: all .4s ease;
+            }
+            &:hover{
+              img{
+                transform: rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px){
+  .kvv .s-hero-v2 .cp-news-list {
+    padding: 60px 0 0 0 !important;
+  }
+  .kvv .blog .item figure{
+    height: 230px;
+  }
+}
+
+
+@media (max-width: 991px){
+  .kvv .blog .item figure {
+    height: 180px;
+  }
+  .kvv .blog .item .text h6, .kvv .blog .item .text .h6{
+    font-size: 16px;
+  }
+  .kvv .blog{
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 575px){
+  .kvv .blog h3, .kvv .blog .h3{
+    width: 100%;
+    margin-bottom: 15px!important;
+  }
+  .kvv .blog .top .btn {
+    font-size: 14px;
+  }
+  .kvv .blog .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

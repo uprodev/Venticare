@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Iconcategoryfootball" fill-opacity="0.36658296">
+    <path d="M2818 -8564L2818 -8564L2818 -8538L2792 -8538L2792 -8564L2818 -8564Z" id="Iconcategoryfootball" fill="none" stroke="none" />
+    <path d="M0 0L26 0L26 26L0 26L0 0Z" id="Rectangle" fill="none" fill-rule="evenodd" stroke="none" />
+    <g id="Icon--line--hospital" fill-opacity="1" transform="translate(1 1)">
+      <path d="M24 0L24 0L24 24L0 24L0 0L24 0Z" id="Icon--line--hospital" fill="none" stroke="none" />
+      <g id="Vector" transform="translate(3 3)">
+        <path d="M6.5 0C6.5 0 11.5 0 11.5 0C12.8807 0 14 1.11929 14 2.5C14 2.5 14 3.5 14 3.5C14 3.5 15.5617 4.74939 15.5617 4.74939C16.1548 5.22382 16.5 5.9421 16.5 6.70156C16.5 6.70156 16.5 18 16.5 18L14 18L4 18C4 18 1.5 18 1.5 18C1.5 18 1.5 6.70156 1.5 6.70156C1.5 5.9421 1.84522 5.22382 2.43826 4.74939C2.43826 4.74939 4 3.5 4 3.5C4 3.5 4 2.5 4 2.5C4 1.11929 5.11929 0 6.5 0Z" id="Vector" fill="none" stroke="#282930" stroke-width="1.5" stroke-linecap="round" />
+        <path d="M10.5 18C10.5 18 7.5 18 7.5 18C7.22386 18 7 17.7761 7 17.5C7 17.5 7 14 7 14C7 13.1716 7.67157 12.5 8.5 12.5C8.5 12.5 9.5 12.5 9.5 12.5C10.3284 12.5 11 13.1716 11 14C11 14 11 17.5 11 17.5C11 17.7761 10.7761 18 10.5 18Z" id="Vector" fill="none" stroke="#282930" stroke-width="1.5" stroke-linecap="round" />
+        <path d="M4 3.5L4 18M1.5 18L0 18M14 18L14 3.5M18 18L16.5 18M7 4.5L9 4.5L11 4.5M9 2.5L9 4.5L9 6.5M7.75 9.5L6.75 9.5M10.25 9.5L11.25 9.5" id="Vector" fill="none" stroke="#282930" stroke-width="1.5" stroke-linecap="round" />
+      </g>
+    </g>
+  </g>
+</svg>

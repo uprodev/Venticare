@@ -1,0 +1,38 @@
+.s-about-intro {
+  --space-x: 100px;
+
+  .img-left {
+    --ratio: calc(420 / 586);
+    aspect-ratio: 1 / var(--ratio);
+
+    img {
+      height: auto;
+    }
+  }
+
+  .img-right {
+    --ratio: calc(660 / 883);
+    aspect-ratio: 1 / var(--ratio);
+  }
+
+  .text {
+    margin: 0 0 30px;
+    padding: 0 1rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    .img-left {
+      border-radius: 0 12px 12px 0;
+    }
+
+    .img-right {
+      border-radius: 12px 0 0 12px;
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    .text {
+      padding-left: var(--space-x);
+    }
+  }
+}

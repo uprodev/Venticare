@@ -1,0 +1,30 @@
+.cp-code-modal {
+  .form-control {
+    background-color: #e8f0fd;
+    font-weight: 400;
+    padding-top: 0.88rem;
+    padding-bottom: 0.88rem;
+    letter-spacing: -0.5px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .btn-reset {
+    padding: 0;
+    background: none;
+    border: none;
+    appearance: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .modal-body {
+      padding: 38px 60px;
+    }
+  }
+}

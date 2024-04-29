@@ -1,0 +1,80 @@
+.s-author-banner {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: url(../images/bg/line-card-author.svg) 0 0 / cover no-repeat;
+    width: 47px;
+    height: 9px;
+    transform: translateX(-50%);
+  }
+
+  .container-fluid {
+    max-width: 1160px;
+  }
+
+  .image {
+    width: 90px;
+    flex: 0 0 auto;
+    margin: 0 25px 0 0;
+
+    img {
+      @extend .img-fluid;
+    }
+  }
+
+  .text {
+    .title {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    h3 {
+      font-size: 25px;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+
+  .s-author-banner-description {
+    padding: 40px 0 0;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &:after {
+      width: 72px;
+      height: 14px;
+    }
+
+    .s-author-banner-description {
+      padding: 33px 0 33px 50px;
+      text-align: left;
+      border-left: 1px solid rgba($white, 0.1958);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .s-author-banner-description {
+      padding: 33px 50px 33px 75px;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .image {
+      margin: 0 48px 0 0;
+    }
+
+    .s-author-banner-description {
+      margin: 0 0 0 21px;
+    }
+  }
+}

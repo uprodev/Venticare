@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Venticare</title>
+  </head>
+  <body>
+    <div class="global-wrapper">
+      <main class="content">
+        <div class="mbox">
+          <div class="head-line">
+            <h1>Venticare</h1>
+          </div>
+          <div class="wrap">
+            <h5>Pages</h5>
+            <ol class="box">
+              <li>
+                <a href="home.html">Homepage</a>
+              </li>
+              <li>
+                <a href="about.html">Over ons Team</a>
+              </li>
+              <li>
+                <a href="blog.html">Artikelen overview</a>
+              </li>
+              <li>
+                <a href="article-1.html">Artikel page 1</a>
+              </li>
+              <li>
+                <a href="article-2.html">Artikel page 2</a>
+              </li>
+              <li>
+                <a href="article-3.html">Artikel page 3</a>
+              </li>
+              <li>
+                <a href="article-4.html">Artikel page 4</a>
+              </li>
+              <li>
+                <a href="author.html">Auteurspage</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="person.html">Persoonspagina</a>
+              </li>
+              <li>
+                <a href="404.html">404</a>
+              </li>
+              <li>
+                <a href="general.html">Generieke pagina</a>
+              </li>
+              <li>
+                <a href="event.html">Event</a>
+              </li>
+              <li>
+                <a href="shop.html">Shop</a>
+              </li>
+              <li>
+                <a href="product.html">Product</a>
+              </li>
+              <li>
+                <a href="product-cart-empty.html">Product (cart empty)</a>
+              </li>
+              <li>
+                <a href="cart-1.html">Webshop - Afrekenen stap 1</a>
+              </li>
+              <li>
+                <a href="cart-2.html">Webshop - Afrekenen stap 2</a>
+              </li>
+              <li>
+                <a href="cart-3.html">Webshop - Afrekenen stap 3</a>
+              </li>
+              <li>
+                <a href="cart-4.html">Webshop - Afrekenen stap 4 bedanktpagina</a>
+              </li>
+              <li>
+                <a href="cart-5.html">Webshop - onestep</a>
+              </li>
+              <li>
+                <a href="landing.html">Landingspagina - Venticare plus</a>
+              </li>
+              <li>
+                <a href="home-plus.html">Homepage - ingelogd venticare plus</a>
+              </li>
+              <li>
+                <a href="event-2.html">Event</a>
+              </li>
+              <li>
+                <a href="blog-2.html">Artikelen overview 2</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </main>
+      <style>
+        .process {
+          opacity: 0.5;
+        }
+
+        .head-line {
+          text-align: center;
+        }
+
+        .head-line h1 {
+          margin: 0 auto;
+          padding: 20px 10px;
+          max-width: 1280px;
+          min-height: 68px;
+          box-sizing: border-box;
+          color: #000;
+          font-size: 24px;
+          word-wrap: break-word;
+        }
+
+        .wrap {
+          padding: 10px;
+          text-align: center;
+          overflow: hidden;
+          margin-top: 80px;
+        }
+
+        h5 {
+          text-align: center;
+          position: relative;
+          display: inline-block;
+          max-width: 1280px;
+          margin: 30px 0 10px;
+          padding: 0 20px;
+          background-color: #fafafa;
+          font-size: 30px;
+        }
+
+        h5:before {
+          content: "";
+          position: absolute;
+          height: 1px;
+          width: 1280px;
+          background-color: #eaeaea;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          z-index: -1;
+        }
+
+        .box a {
+          color: #212121;
+          text-decoration: none;
+        }
+
+        .box a.not-ready {
+          opacity: 0.5;
+        }
+
+        .box a.pink {
+          color: #ea1d65;
+        }
+
+        .box a:hover {
+          color: #212121;
+          text-decoration: underline;
+        }
+
+        .box {
+          list-style-type: none;
+          padding: 20px 40px;
+          margin: 20px auto;
+          width: 100%;
+          max-width: 1280px;
+          border-radius: 8px;
+          box-sizing: border-box;
+          border: 1px solid #eaeaea;
+          background-color: #fff;
+          text-align: left;
+          -webkit-columns: 210px auto;
+          columns: 210px auto;
+          -webkit-column-gap: 50px;
+          column-gap: 50px;
+          -webkit-column-rule: 1px solid #f2f2f2;
+          column-rule: 1px solid #f2f2f2;
+        }
+
+        .box li {
+          word-wrap: break-word;
+          display: inline-block;
+          box-sizing: border-box;
+          width: 100%;
+          padding: 10px 15px 10px 40px;
+          position: relative;
+        }
+
+        .box li a::before {
+          position: absolute;
+          display: inline-block;
+        }
+
+        .box {
+          counter-reset: item;
+        }
+
+        .box li {
+          counter-increment: item;
+        }
+
+        .box li a::before {
+          content: counter(item, decimal-leading-zero) ".";
+          top: 13px;
+          left: 0;
+          color: #ea1d65;
+          font-size: 12px;
+          z-index: 10;
+        }
+      </style>
+    </div>
+  </body>
+</html>

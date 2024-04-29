@@ -1,0 +1,58 @@
+.navbar-toggler {
+  position: relative;
+  z-index: 9;
+  box-shadow: none;
+  width: 16px;
+  height: 16px;
+  background: none;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+
+  .navbar-toggler-icon {
+    display: block;
+    margin: auto;
+    width: 14px;
+    height: 2px;
+    border-radius: 2px;
+    position: relative;
+    background-color: $dark;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $dark;
+      transition: all 0.2s linear;
+      transform-origin: center;
+    }
+
+    &:before {
+      top: -5px;
+    }
+
+    &:after {
+      bottom: -5px;
+    }
+  }
+
+  &.active {
+    .navbar-toggler-icon {
+      background-color: transparent;
+
+      &:before {
+        top: 0;
+        transform: translateY(0) rotate(45deg);
+      }
+
+      &:after {
+        top: 0;
+        transform: translateY(0) rotate(-45deg);
+      }
+    }
+  }
+}

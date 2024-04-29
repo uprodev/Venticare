@@ -1,0 +1,71 @@
+<div class="cart-wrapper">
+  <div class="cart-main">
+    <div class="cart-logo">
+      <a href="#"><img src="images/logo.svg" alt="" /></a>
+    </div>
+    <div class="cart-title">Welkom bij Venticare</div>
+    <div class="cart-block cart-block--email">
+      <p>Welk e-mailadres kunnen wij gebruiken?</p>
+      <form action="#">
+        <div class="mt-20 mb-30"><input type="email" class="form-control" placeholder="Sarah@theoxstudio.nl" /></div>
+        <div class="cart-submit">
+          <button type="submit" class="btn btn-dark">Door naar bestellen<img src="images/icons/ico-arrow-btn.svg" alt="" /></button>
+        </div>
+      </form>
+      <hr />
+    </div>
+    <div class="cart-footer">
+      <p>&copy; Copyright Venticare 2011-2023</p>
+    </div>
+  </div>
+
+  <div class="cart-sidebar">
+    <div class="cart-sidebar-title">Winkelmand</div>
+    <div class="cp-cart-item cp-cart-item--white">
+      <div class="cp-cart-item-image"><img src="images/img44.jpg" alt="" /></div>
+      <div class="cp-cart-item-text">
+        <div class="cp-cart-item-title">Beademing, een praktische handleiding</div>
+        <div class="cp-cart-item-subtitle">Handleiding</div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="cp-cart-item-price">&euro;26</div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-subtotal">
+      <ul>
+        <li>Verzending <span>Gratis</span></li>
+        <li>Totaal <span>&euro;26,00</span></li>
+      </ul>
+    </div>
+    <div class="cart-code">
+      <button type="button" class="btn-cart-code" data-bs-toggle="modal" data-bs-target="#codeModal">Ik heb een kortingscode</button>
+    </div>
+    <div class="cart-total">
+      <ul>
+        <li>
+          Totaal
+          <p>&euro;26,00 (inclusief &euro;3,62 BTW)</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade cp-code-modal" id="codeModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="fs-20 text-center mb-20">Vul hier je code in</div>
+        <form action="#">
+          <div class="mb-2">
+            <input type="text" placeholder="Kortingscode" class="form-control" />
+          </div>
+          <div class="mb-2">
+            <button type="submit" class="btn btn-dark">Toevoegen<img src="images/icons/ico-arrow-btn.svg" alt="" /></button>
+          </div>
+          <button type="reset" class="btn-reset" data-bs-dismiss="modal">Annuleren</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,118 @@
+.cp-icons-list {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      position: relative;
+      padding: 0 0 12px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 35px;
+        width: 1px;
+        background-color: $secondary;
+        mask: url(../images/mask/mask-line.svg) 0 0 / auto repeat-y;
+      }
+
+      &:last-child {
+        &:before {
+          display: none;
+        }
+      }
+
+      .cp-icons-list-icon {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        background-color: $secondary;
+        width: 71px;
+        height: 71px;
+        margin: 0 18px 0 0;
+        position: relative;
+        z-index: 1;
+      }
+
+      .cp-icons-list-main {
+        .h4 {
+          line-height: 60px;
+          margin: 0;
+        }
+
+        p {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &--horizontal {
+      ul {
+        display: flex;
+        margin: 0 -20px;
+
+        li {
+          width: 100%;
+          padding: 0 20px;
+          flex-direction: column;
+
+          &:before {
+            top: 33px;
+            bottom: auto;
+            left: 0;
+            right: 0;
+            height: 1px;
+            width: auto;
+            mask: url(../images/mask/mask-line-hr.svg) 0 0 / auto repeat-x;
+          }
+
+          &:last-child {
+            &:before {
+              display: block;
+              right: 50px;
+            }
+          }
+
+          .cp-icons-list-icon {
+            margin: 0 0 11px;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    ul {
+      li {
+        .cp-icons-list-main {
+          .h4 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    &--horizontal {
+      ul {
+        margin: 0 -65px;
+
+        li {
+          padding: 0 65px;
+
+          &:before {
+            // left: 70px;
+            // right: -70px;
+          }
+        }
+      }
+    }
+  }
+}

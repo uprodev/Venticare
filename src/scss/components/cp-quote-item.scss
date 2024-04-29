@@ -1,0 +1,59 @@
+.cp-quote-item {
+  display: flex;
+  flex-direction: column;
+
+  .cp-quote-item-image {
+    position: relative;
+
+    .blur-mode {
+      @include img-abs-container(119%);
+    }
+
+    .cp-socials {
+      position: absolute;
+      right: 23px;
+      bottom: 26px;
+
+      a {
+        background-color: rgba(255, 255, 255, 0.09);
+      }
+    }
+  }
+
+  .cp-quote-item-text {
+    padding: 40px 0 0;
+
+    .h4 {
+      margin: 0;
+    }
+    .subtitle {
+      margin: 0 0 20px;
+      line-height: 1.86;
+    }
+    p {
+      line-height: 1.5;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    align-items: center;
+
+    .cp-quote-item-image {
+      width: 320px;
+      flex-shrink: 0;
+    }
+
+    .cp-quote-item-text {
+      padding: 0 0 50px 47px;
+
+      .h4 {
+        font-size: 20px;
+        margin: 0 0 5px;
+      }
+      .subtitle {
+        font-size: 15px;
+      }
+    }
+  }
+}

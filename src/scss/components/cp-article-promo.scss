@@ -1,0 +1,47 @@
+.cp-article-promo {
+  position: relative;
+
+  .blur-mode {
+    aspect-ratio: 7/5;
+  }
+
+  .overlay {
+    @include abs;
+    @extend .rounded;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -11.23%, rgba(0, 0, 0, 0.56) 100%) 0 0 / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 20px 20px;
+    color: $white;
+
+    p {
+      margin: 0;
+      @extend .fs-13;
+    }
+
+    h4 {
+      margin: 0;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .blur-mode {
+      aspect-ratio: 12/5;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .overlay {
+      padding: 0 40px 40px;
+
+      p {
+        margin: 0;
+      }
+
+      h4 {
+        margin: 0;
+      }
+    }
+  }
+}

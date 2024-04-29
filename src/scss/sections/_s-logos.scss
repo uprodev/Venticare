@@ -1,0 +1,42 @@
+.kvv{
+  .logos-v2{
+    .cp-logos-list ul{
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-gap: 15px 15px;
+      li{
+        width: 100%;
+      }
+    }
+    .container-fluid{
+      max-width: 1490px;
+    }
+  }
+  .py-30{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .pt-30{
+    padding-top: 30px;
+  }
+  .pb-45{
+    padding-bottom: 45px;
+  }
+}
+
+@media (max-width: 991px){
+  .kvv .logos-v2 .cp-logos-list ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li{
+      width: 25%;
+    }
+  }
+}
+
+@media (max-width: 575px){
+  .kvv .logos-v2 .cp-logos-list ul li {
+    width: 30%;
+  }
+}

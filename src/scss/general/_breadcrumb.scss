@@ -1,0 +1,22 @@
+.breadcrumb {
+  font-weight: 500;
+  line-height: 2.15;
+
+  .breadcrumb-item {
+    &:before {
+      float: left;
+      padding-right: var(--bs-breadcrumb-item-padding-x);
+      color: var(--bs-breadcrumb-divider-color);
+      content: var(--bs-breadcrumb-divider, ">");
+    }
+
+    a {
+      color: rgba($dark, 0.2676);
+      transition: all 0.2s;
+
+      &:hover {
+        color: rgba($dark, 1);
+      }
+    }
+  }
+}

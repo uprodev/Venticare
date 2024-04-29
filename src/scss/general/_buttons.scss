@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+a,
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn {
+  img,
+  svg {
+    margin-left: 10px;
+  }
+
+  svg path {
+    transition: all 0.2s;
+  }
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+}
+
+.btn-gray {
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+}
+
+.btn-outline-primary {
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+
+  &:hover {
+    svg path {
+      fill: var(--bs-btn-hover-color);
+    }
+  }
+
+  &:active {
+    svg path {
+      fill: var(--bs-btn-active-color);
+    }
+  }
+}
+
+.btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+}
+
+.btn-sm {
+  @include media-breakpoint-down(sm) {
+    font-size: 10px;
+  }
+}
+
+.btn-violet{
+  background: #8664a8;
+  &:hover, &:active, &:focus{
+    background: #684c81!important;
+  }
+}
+
+.btn-violet-light{
+  background: #efe0ff;
+  &:hover, &:active, &:focus{
+    background: #cebfdb !important;
+  }
+}

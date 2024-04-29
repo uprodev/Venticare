@@ -1,0 +1,133 @@
+.cp-section-image {
+  position: relative;
+
+  .blur-mode {
+    border-radius: $border-radius;
+    height: 100%;
+
+    img {
+      border-radius: $border-radius;
+      height: 100%;
+      object-position: center top;
+    }
+  }
+
+  .circle {
+    width: 34.3%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    left: 33.9%;
+    top: 100%;
+    background: rgba(#42bfea, 0.53);
+    transform: translate3d(0, -57.8%, 0);
+    mask: url(../images/mask/mask-circle-lined.png) 0 0 / cover no-repeat;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 100%;
+
+    &--single {
+      right: 13.43%;
+      width: 47.6%;
+      padding: 15px;
+      transform: translateY(-72%);
+    }
+
+    &--left,
+    &--right {
+      width: 35%;
+      padding: 15px;
+    }
+
+    &--left {
+      left: 15%;
+      transform: translateY(-34.8%);
+    }
+    &--right {
+      left: calc(50% + 16px);
+      transform: translateY(-66.3%);
+    }
+
+    .h4,
+    p {
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .overlay {
+      &--single {
+        width: 260px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .overlay {
+      &--left,
+      &--right {
+        width: 27.5%;
+      }
+
+      &--left {
+        left: 25.5%;
+      }
+      &--right {
+        left: calc(53% + 16px);
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    position: absolute;
+    top: 0;
+    width: 44.3%;
+
+    .overlay {
+      &--single {
+        width: 320px;
+        padding: 29px 30px 31px 39px;
+      }
+
+      &--left,
+      &--right {
+        padding: 30px 28px;
+      }
+    }
+  }
+
+  &--left {
+    @include media-breakpoint-up(lg) {
+      transform: translateX(-16px);
+
+      .blur-mode,
+      .blur-mode img {
+        border-radius: 0 $border-radius $border-radius 0;
+      }
+    }
+
+    @include media-breakpoint-up(xxl) {
+      transform: none;
+      left: 0;
+    }
+  }
+
+  &--right {
+    @include media-breakpoint-up(lg) {
+      transform: translateX(16px);
+
+      .blur-mode,
+      .blur-mode img {
+        border-radius: $border-radius 0 0 $border-radius;
+      }
+    }
+
+    @include media-breakpoint-up(xxl) {
+      transform: none;
+      right: 0;
+    }
+  }
+}

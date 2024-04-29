@@ -1,0 +1,37 @@
+.cp-link-boxes {
+  ul {
+    margin: 0 -9px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      width: 100%;
+      max-width: 318px;
+      padding: 0 9px;
+      margin: 20px 0 0;
+
+      a {
+        display: block;
+        height: 100%;
+        @extend .rounded;
+        padding: 27px 40px 28px;
+        background-color: $gray-100;
+        font-weight: 500;
+
+        span {
+          font-size: 10px;
+        }
+        p {
+          font-size: 14px;
+          margin: 2px 0 0;
+          img {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

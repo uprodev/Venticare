@@ -1,0 +1,139 @@
+input,
+select,
+textarea,
+button {
+  font-family: $font-family-base;
+}
+
+html {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base-sm;
+  line-height: $line-height-base-sm;
+  font-weight: 400;
+  color: $dark;
+
+  @include media-breakpoint-up(sm) {
+    font-size: $font-size-base-md;
+    line-height: $line-height-base;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: $font-size-base;
+  }
+}
+
+h1,
+.h1 {
+  font-weight: 400;
+  margin: 0 0 1rem;
+  line-height: 1.34;
+}
+
+h2,
+.h2 {
+  margin: 0 0 1rem;
+  line-height: 1.4857;
+  font-weight: 500;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 1.5rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 0.875rem;
+    line-height: 1.64;
+  }
+}
+
+h3,
+.h3 {
+  margin: 0 0 1rem;
+  line-height: 1.68;
+  font-weight: 500;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 1.3rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 0.875rem;
+    line-height: 2.286;
+  }
+}
+
+h4,
+.h4 {
+  margin: 0 0 1rem;
+  line-height: 1.667;
+  font-weight: 600;
+
+  &.fs-20 {
+    @include font-size(1.25rem);
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 0.75rem;
+    line-height: 2.5;
+  }
+}
+
+h5,
+.h5 {
+  margin: 0;
+  line-height: 2.15;
+  font-weight: 500;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 0.7rem;
+  }
+}
+
+p,
+ul,
+ol,
+dl {
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+.fs-13 {
+  font-size: 13px;
+  line-height: 28px;
+}
+.fs-14 {
+  font-size: 14px;
+  line-height: 25px;
+}
+.fs-15 {
+  font-size: 15px;
+  line-height: 1.6;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 13px;
+  }
+}
+.fs-16 {
+  font-size: 16px;
+  line-height: 1;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}
+.fs-20 {
+  font-size: 20px;
+  line-height: 25px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}

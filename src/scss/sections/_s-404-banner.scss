@@ -1,0 +1,20 @@
+.s-404-banner {
+  .h4 {
+    margin: 0 0 25px;
+    font-weight: 500;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .h4 {
+      font-size: 20px;
+      line-height: 2;
+      margin: 0 0 41px;
+    }
+
+    .cp-buttons {
+      .btn {
+        --bs-btn-padding-x: 2.1rem;
+      }
+    }
+  }
+}

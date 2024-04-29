@@ -1,0 +1,162 @@
+.footer {
+  .f-logo {
+    margin: 0 0 15px;
+
+    img {
+      display: block;
+      width: 100px;
+      height: auto;
+    }
+  }
+
+  .f-title {
+    letter-spacing: 0.32px;
+    line-height: normal;
+  }
+
+  address {
+    p {
+      margin: 15px 0 0;
+      line-height: 1.73;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  .f-links {
+    margin: 0 0 40px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin: 14px 0 0;
+
+        a {
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+
+          .icon {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba($dark, 0.09);
+            border-radius: 5px;
+            margin-right: 11px;
+
+            img {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .f-menu {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      letter-spacing: 0.32px;
+      line-height: 1.2;
+
+      li {
+        margin: 14px 0 0;
+      }
+
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .list-inline-item {
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 14px;
+  }
+
+  @include media-breakpoint-up(md) {
+    address {
+      margin: 0 0 30px;
+    }
+
+    .f-links {
+      margin: 0;
+    }
+
+    .f-copyright {
+      letter-spacing: 0.32px;
+    }
+
+    .list-inline {
+      letter-spacing: 0.32px;
+      margin-left: 55px;
+
+      .list-inline-item {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 16px;
+
+    address {
+      font-size: 15px;
+      margin: 0 0 42px;
+    }
+
+    .f-links {
+      font-size: 14px;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .f-logo {
+      margin: 0 0 20px;
+
+      img {
+        width: 156px;
+      }
+    }
+
+    address {
+      p {
+        margin: 19px 0 0;
+      }
+    }
+
+    .f-links {
+      ul {
+        li {
+          margin: 14px 0 0;
+        }
+      }
+    }
+
+    .f-menu {
+      ul {
+        margin: 36px 0 0;
+
+        li {
+          margin: 23px 0 0;
+        }
+      }
+    }
+  }
+}

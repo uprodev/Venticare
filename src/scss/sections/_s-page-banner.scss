@@ -1,0 +1,12 @@
+.s-page-banner {
+  h1 {
+    margin: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-height: 412px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

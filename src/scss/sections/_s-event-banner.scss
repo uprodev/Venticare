@@ -1,0 +1,204 @@
+.s-event-banner {
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    background-image: url(../images/bg/bg-event.png);
+    background-position: right 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+
+    &:before {
+      content: "";
+      width: 290px;
+      height: 290px;
+      border-radius: 100%;
+      background-color: $secondary;
+      position: absolute;
+      right: -72px;
+      bottom: -89px;
+    }
+
+    &:after {
+      content: "";
+      width: 230px;
+      height: 230px;
+      border-radius: 100%;
+      background-color: $primary;
+      opacity: 0.5285;
+      position: absolute;
+      right: -72px;
+      bottom: 84px;
+      mask: url(../images/mask/mask-circle-lined.png) 0 0 / cover no-repeat;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .fs-20 {
+      line-height: 52px;
+    }
+  }
+}
+
+.kvv{
+  .s-event-banner-v2{
+    position: relative;
+    padding: 50px 0 0;
+    background: transparent!important;
+    &:after, &:before{
+      display: none;
+    }
+    .bg{
+      bottom: 107px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .sub-title{
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-bottom: 29px;
+    }
+    h6{
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+      margin-bottom: 2px;
+    }
+    h1, h2{
+      font-size: 35px;
+      font-weight: 500;
+      line-height: 45px;
+      margin-bottom: 29px;
+    }
+    .btn-wrap{
+      .btn{
+        font-size: 16px;
+      }
+    }
+    .nav-wrap{
+      position: absolute;
+      bottom: 85px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px 0;
+      max-height: 0;
+      z-index: 3;
+      &>div{
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 58px;
+        height: 58px;
+        border-radius: 100%;
+        background: rgba(255, 255, 255, 0.12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all .4s ease;
+        &:hover{
+          background: rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+  }
+  .bg-slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  .bg-slide + *{
+    position: relative;
+    z-index: 2;
+  }
+
+  .slider-event{
+    position: relative;
+    width: 940px;
+    margin: auto;
+    .swiper-slide{
+      position: relative;
+      padding: 81px 16% 55px;
+      border-radius: 12px;
+      background: #351853;
+    }
+    .bg-slide{
+      border-radius: 12px;
+      .img{
+        position: absolute;
+      }
+      .img-1{
+        top: 0;
+        right: 0;
+        height: 100%;
+      }
+      .img-2{
+        right: 0;
+        bottom: 0;
+      }
+      .img-3{
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px){
+  .kvv .slider-event{
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px){
+  .kvv .slider-event .swiper-slide{
+    padding: 30px 20px 40px;
+  }
+  .kvv .s-event-banner-v2 .sub-title {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  .kvv .s-event-banner-v2 h1, .kvv .s-event-banner-v2 .h1, .kvv .s-event-banner-v2 h2, .kvv .s-event-banner-v2 .h2{
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  .kvv .s-event-banner-v2 h6, .kvv .s-event-banner-v2 .h6{
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .kvv .s-event-banner-v2 .nav-wrap > div{
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    svg{
+      width: 100%;
+    }
+  }
+  .kvv .slider-event .bg-slide .img-1{
+    right: -100px;
+  }
+  .kvv .slider-event .bg-slide .img-2{
+    width: 50px;
+  }
+  .kvv .slider-event .bg-slide .img-3{
+    width: 70px;
+  }
+  .kvv .s-event-banner-v2 .nav-wrap{
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 576px){
+  .kvv .slider-event .bg-slide .img-1 {
+    right: -180px;
+  }
+}

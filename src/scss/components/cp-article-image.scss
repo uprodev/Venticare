@@ -1,0 +1,32 @@
+.cp-article-image {
+  figure {
+    display: flex;
+    margin: 0 -20px 0 0;
+  }
+
+  .blur-mode {
+    @extend .rounded;
+    margin: 0 20px 0 0;
+    width: 100%;
+
+    img {
+      height: auto;
+    }
+  }
+
+  .cp-article-image-description {
+    font-style: italic;
+    line-height: 1.667;
+    margin: 25px 0 0;
+  }
+
+  @include media-breakpoint-up(xl) {
+    figure {
+      margin: 0 -45px 0 0;
+    }
+
+    .blur-mode {
+      margin: 0 45px 0 0;
+    }
+  }
+}

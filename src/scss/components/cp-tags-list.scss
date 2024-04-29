@@ -1,0 +1,29 @@
+.cp-tags-list {
+  border-top: 1px solid #ddd;
+  padding: 20px 0 10px;
+
+  .list-inline {
+    .list-inline-item {
+      margin: 0 10px 10px 0;
+
+      a {
+        color: #1e1e1e;
+        border: 1px solid rgba(#1e1e1e, 0.1);
+        border-radius: 4px;
+        display: block;
+        padding: 10px 13px;
+        font-size: 10px;
+        line-height: 11px;
+        font-weight: 600;
+
+        &:hover {
+          background-color: rgba(#1e1e1e, 0.05);
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 36px 0 0;
+  }
+}

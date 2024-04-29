@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Iconcategoryfootball" fill-opacity="0.36658296">
+    <path d="M2818 -8564L2818 -8564L2818 -8538L2792 -8538L2792 -8564L2818 -8564Z" id="Iconcategoryfootball" fill="none" stroke="none" />
+    <path d="M0 0L26 0L26 26L0 26L0 0Z" id="Rectangle" fill="none" fill-rule="evenodd" stroke="none" />
+    <g id="Icon--line--blood" fill-opacity="1" transform="translate(1 1)">
+      <path d="M24 0L24 0L24 24L0 24L0 0L24 0Z" id="Icon--line--blood" fill="none" stroke="none" />
+      <path d="M10 21C6.13401 21 3 17.7834 3 13.8154C3 10.5546 7.72755 5.02842 9.4124 3.16251C9.67297 2.87393 10.1429 2.99106 10.3092 3.34555C10.7793 4.34768 14.4898 8.78205 12.4461 6.38756C13.4271 5.00488 14.4605 3.78701 15.0383 3.13091C15.243 2.89845 15.6123 2.9928 15.7429 3.27836C16.974 5.96854 21 8.75859 21 11.7124C21 14.7222 18.8167 17.1954 16.0258 17.4739L17 13.8154M16.0258 17.4739C14.8065 19.5848 12.5643 21 10 21" id="Vector" fill="none" stroke="#282930" stroke-width="1.5" />
+      <path d="M10.0419 18C9.29369 18 8.56048 17.7902 7.92557 17.3943C7.29067 16.9985 6.77952 16.4325 6.4502 15.7606" id="Vector" fill="none" stroke="#282930" stroke-width="1.6" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>

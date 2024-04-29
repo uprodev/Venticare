@@ -1,0 +1,54 @@
+.s-article-banner {
+  .blur-mode {
+    height: 104px;
+  }
+
+  .text-center {
+    padding: 30px 0 35px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      background: url(../images/bg/line-card-author.svg) 0 0 / cover no-repeat;
+      width: 47px;
+      height: 9px;
+      transform: translateX(-50%);
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .btn {
+      margin: 0 0 7px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .blur-mode {
+      height: 180px;
+    }
+
+    .text-center {
+      padding: 64px 0 86px;
+
+      &:after {
+        width: 72px;
+        height: 14px;
+      }
+
+      .btn {
+        margin: 0 0 20px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .blur-mode {
+      height: 272px;
+    }
+  }
+}

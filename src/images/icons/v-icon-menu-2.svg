@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Iconcategoryfootball" fill-opacity="0.36658296">
+    <path d="M2818 -8564L2818 -8564L2818 -8538L2792 -8538L2792 -8564L2818 -8564Z" id="Iconcategoryfootball" fill="none" stroke="none" />
+    <path d="M0 0L26 0L26 26L0 26L0 0Z" id="Rectangle" fill="none" fill-rule="evenodd" stroke="none" />
+    <g id="Icon--line--heart-rate-machine" fill-opacity="1" transform="translate(1 1)">
+      <path d="M24 0L24 0L24 24L0 24L0 0L24 0Z" id="Icon--line--heart-rate-machine" fill="none" stroke="none" />
+      <g id="Vector" transform="translate(3 5)">
+        <path d="M0.299115 1.95365C0.407686 1.04091 1.34486 0.321817 2.51848 0.243145C7.34279 -0.0802442 10.6924 -0.0811854 15.4781 0.241153C16.6574 0.320589 17.5958 1.04691 17.7002 1.96448C18.1214 5.6679 18.0825 8.28281 17.6853 12.0173C17.5866 12.9451 16.6418 13.684 15.4497 13.7627C10.65 14.0792 7.30436 14.0785 2.56588 13.7642C1.37088 13.6849 0.426121 12.942 0.328505 12.0118C-0.0594397 8.31517 -0.145772 5.69376 0.299115 1.95365Z" id="Vector" fill="none" stroke="#282930" stroke-width="1.5" stroke-linecap="round" />
+        <path d="M4 7.01945C4 7.01945 5.86813 7.01945 5.86813 7.01945C5.91411 7.01945 5.95533 6.99388 5.97184 6.95513C5.97184 6.95513 7.203 4.06433 7.203 4.06433C7.24234 3.97196 7.39033 3.98136 7.41497 4.07779C7.41497 4.07779 8.90842 9.92222 8.90842 9.92222C8.93386 10.0218 9.08857 10.0273 9.12264 9.92987C9.12264 9.92987 10.6055 5.68933 10.6055 5.68933C10.6319 5.61368 10.7405 5.59436 10.7968 5.65531C10.7968 5.65531 12.0222 6.98335 12.0222 6.98335C12.0434 7.00623 12.0746 7.01945 12.1076 7.01945L14 7.01945" id="Vector" fill="none" stroke="#282930" stroke-width="1.5" stroke-linecap="round" />
+      </g>
+    </g>
+  </g>
+</svg>

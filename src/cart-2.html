@@ -1,0 +1,121 @@
+<div class="cart-wrapper">
+  <div class="cart-main">
+    <div class="cart-logo">
+      <a href="#"><img src="images/logo.svg" alt="" /></a>
+    </div>
+    <div class="cart-title">Welkom bij Venticare</div>
+    <div class="cart-block cart-block--email">
+      <p>Welk e-mailadres kunnen wij gebruiken?</p>
+      <div class="email-wrapper d-md-flex align-items-center justify-content-between mb-md-2">
+        <dl>
+          <dt>E-mail adres:</dt>
+          <dd>Sarah@theoxstudio.nl</dd>
+        </dl>
+        <button type="button" class="btn btn-gray">Aanpassen<img src="images/icons/ico-arrow-btn.svg" alt="" /></button>
+      </div>
+    </div>
+    <div class="cart-block cart-block--address">
+      <div class="fs-13 fw-bold mb-10">Vul je gegevens in</div>
+      <form action="#">
+        <div class="mb-2">
+          <select class="form-select">
+            <option value="Nederland">Nederland</option>
+            <option value="Nederland">Nederland</option>
+            <option value="Nederland">Nederland</option>
+            <option value="Nederland">Nederland</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="mb-2"><input type="text" class="form-control" placeholder="placeholder" value="Sarah" /></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="mb-2"><input type="text" class="form-control" placeholder="placeholder" value="Van der Ree" /></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="mb-2"><input type="tel" class="form-control" placeholder="placeholder" value="06 - 411 711 25" /></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="mb-2"><input type="text" class="form-control" placeholder="Bedrijfsnaam" /></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="mb-2"><input type="text" class="form-control" placeholder="placeholder" value="1079 ET " /></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="mb-2"><input type="text" class="form-control" placeholder="placeholder" value="Lekstraat,  Amsterdam" /></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <select class="form-select">
+            <option value="0">-Selecteer huisnummer-</option>
+            <option value="1">-Selecteer huisnummer-</option>
+            <option value="2">-Selecteer huisnummer-</option>
+            <option value="3">-Selecteer huisnummer-</option>
+          </select>
+        </div>
+        <div class="form-check mt-30">
+          <input class="form-check-input" type="checkbox" value="" id="check1" />
+          <label class="form-check-label" for="check1">Verzenden naar een ander adres?</label>
+        </div>
+        <div class="form-check mt-20 mb-30">
+          <input class="form-check-input" type="checkbox" value="" id="check2" checked />
+          <label class="form-check-label" for="check2">Ja ik wil de Venticare nieuwsbrief ontvangen!</label>
+        </div>
+        <button type="submit" class="btn btn-dark">Verder<img src="images/icons/ico-arrow-btn.svg" alt="" /></button>
+      </form>
+    </div>
+    <div class="cart-footer">
+      <p>&copy; Copyright Venticare 2011-2023</p>
+    </div>
+  </div>
+
+  <div class="cart-sidebar">
+    <div class="cart-sidebar-title">Winkelmand</div>
+    <div class="cp-cart-item cp-cart-item--white">
+      <div class="cp-cart-item-image"><img src="images/img44.jpg" alt="" /></div>
+      <div class="cp-cart-item-text">
+        <div class="cp-cart-item-title">Beademing, een praktische handleiding</div>
+        <div class="cp-cart-item-subtitle">Handleiding</div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="cp-cart-item-price">&euro;26</div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-subtotal">
+      <ul>
+        <li>Verzending <span>Gratis</span></li>
+        <li>Totaal <span>&euro;26,00</span></li>
+      </ul>
+    </div>
+    <div class="cart-code">
+      <button type="button" class="btn-cart-code" data-bs-toggle="modal" data-bs-target="#codeModal">Ik heb een kortingscode</button>
+    </div>
+    <div class="cart-total">
+      <ul>
+        <li>
+          Totaal
+          <p>&euro;26,00 (inclusief &euro;3,62 BTW)</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade cp-code-modal" id="codeModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="fs-20 text-center mb-20">Vul hier je code in</div>
+        <form action="#">
+          <div class="mb-2">
+            <input type="text" placeholder="Kortingscode" class="form-control" />
+          </div>
+          <div class="mb-2">
+            <button type="submit" class="btn btn-dark">Toevoegen<img src="images/icons/ico-arrow-btn.svg" alt="" /></button>
+          </div>
+          <button type="reset" class="btn-reset" data-bs-dismiss="modal">Annuleren</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

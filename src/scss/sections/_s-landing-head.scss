@@ -1,0 +1,207 @@
+.kvv{
+  .bg, .bg-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  .bg + *{
+    position: relative;
+    z-index: 2;
+  }
+  .bg-icon + *{
+    position: relative;
+    z-index: 2;
+  }
+  .landing-head{
+    position: relative;
+    padding: 115px 0 92px;
+    .container-fluid {
+      max-width: 1160px;
+    }
+    .bg{
+      img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .info-block{
+      position: absolute;
+      top: 2px;
+      right: 100px;
+      width: 380px;
+
+      background: #ffffff;
+      background-blend-mode: normal;
+      box-shadow: 0px 2px 34px 10px rgba(0,0,0,0.11);
+      z-index: 3;
+      padding: 0;
+      .bg-icon{
+        right: -115px;
+        img{
+          position: absolute;
+          bottom: 48px;
+          right: 0;
+          transition: all .4s ease;
+        }
+      }
+      .info{
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translate(-50%,0);
+        border-radius: 22px;
+        background: #8fd2e9;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        padding: 0 47px;
+        p{
+          color: #ffffff;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 26px;
+          text-align: center;
+          margin: 0!important;
+        }
+      }
+      .wrap{
+        padding: 27px 29px 20px;
+        text-align: center;
+        background: #ffffff;
+        border-radius: 10px;
+      }
+      h4{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 16px;
+      }
+      .price{
+        position: relative;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 0;
+        left: 7px;
+        .data-1{
+          top: 2px;
+          right: 100%;
+          padding-right: 4px;
+        }
+        .data-2{
+          bottom: -2px;
+          padding-left: 8px;
+          left: 100%;
+        }
+        span{
+          position: absolute;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+          white-space: nowrap;
+        }
+      }
+      .wrap-price{
+        margin-bottom: 22px;
+      }
+      .btn-wrap{
+        margin-bottom: 36px;
+        a{
+          width: 100%;
+        }
+      }
+      h6{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: left;
+        margin-bottom: 19px;
+      }
+    }
+    .text{
+      padding: 0 15px;
+      p{
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 10px;
+      }
+      .label{
+        color: #42bfea;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 10px;
+      }
+      h1{
+        color: #ffffff;
+        margin-bottom: 16px;
+        font-size: 44px;
+        font-weight: 500;
+        line-height: 51px;
+      }
+      .img-wrap{
+        margin-top: 40px;
+        img{
+          width: auto;
+          height: 78px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1199px){
+  .kvv .landing-head .text h1, .kvv .landing-head .text .h1{
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 991px){
+  .kvv .landing-head .text h1, .kvv .landing-head .text .h1{
+    font-size: 36px;
+  }
+  .kvv .landing-head .info-block{
+    position: relative;
+    right: -50%;
+    transform: translate(-50%,0);
+    top: 100px;
+  }
+  .kvv .landing-head .text{
+    text-align: center;
+  }
+  .kvv .landing-head{
+    padding: 75px 0 0;
+  }
+
+}
+
+@media (max-width: 767px){
+  .kvv .landing-head .text h1, .kvv .landing-head .text .h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 575px){
+  .kvv .landing-head .text h1, .kvv .landing-head .text .h1 {
+    font-size: 30px;
+  }
+}

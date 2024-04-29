@@ -1,0 +1,19 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 6">
+<g id="social">
+<g id="behance">
+<rect id="Rectangle 731" opacity="0.1" width="50" height="50" rx="17" fill="white"/>
+</g>
+</g>
+<g id="basic / mail" opacity="0.4119">
+<g id="basic / mail_2">
+<mask id="mask0_0_913" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="13" y="13" width="24" height="24">
+<rect id="basic / mail (Background/Mask)" x="13" y="13" width="24" height="24" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_913)">
+<path id="basic / mail_3" fill-rule="evenodd" clip-rule="evenodd" d="M15 19C15 17.8954 15.8954 17 17 17H33C34.1046 17 35 17.8954 35 19V31C35 32.1046 34.1046 33 33 33H17C15.8954 33 15 32.1046 15 31V19C15 17.8954 15 19 15 19ZM33 20.8685V31H17V20.8685L25 26.2018L33 20.8685V20.8685ZM32.1972 19H17.8028L25 23.7981L32.1972 19V19Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

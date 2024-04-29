@@ -1,0 +1,108 @@
+<div class="cart-wrapper">
+  <div class="cart-main">
+    <div class="cart-logo">
+      <a href="#"><img src="images/logo.svg" alt="" /></a>
+    </div>
+    <div class="cart-title">Welkom bij Venticare</div>
+    <div class="cart-block cart-block--email">
+      <p>Welk e-mailadres kunnen wij gebruiken?</p>
+      <div class="email-wrapper d-md-flex align-items-center justify-content-between mb-md-2">
+        <dl>
+          <dt>E-mail adres:</dt>
+          <dd>Sarah@theoxstudio.nl</dd>
+        </dl>
+        <button type="button" class="btn btn-gray">Aanpassen<img src="images/icons/ico-arrow-btn.svg" alt="" /></button>
+      </div>
+    </div>
+    <div class="cart-block cart-block--payment">
+      <div class="h4 mt-40 mb-10">Betaalmethode</div>
+      <form action="#">
+        <div class="payment-box mb-3" data-type="ideal">
+          <div class="form-check form-check-radio">
+            <input class="form-check-input" type="radio" name="payment_method" id="payment1" data-type="ideal" />
+            <label class="form-check-label" for="payment1"> iDeal </label>
+          </div>
+          <div class="payment-box-inner">some text</div>
+        </div>
+        <div class="payment-box mb-3 active" data-type="creditcard">
+          <div class="form-check form-check-radio">
+            <input class="form-check-input" type="radio" name="payment_method" id="payment2" data-type="creditcard" checked />
+            <label class="form-check-label" for="payment2">Creditcard </label>
+          </div>
+          <div class="payment-box-inner">
+            <div class="mb-2"><input type="text" class="form-control" placeholder="placeholder" /></div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="mb-2"><input type="text" class="form-control" placeholder="Datum verloop" /></div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-2"><input type="text" class="form-control" placeholder="Beveiligingscode" /></div>
+              </div>
+            </div>
+            <div class="mb-3"><input type="text" class="form-control" placeholder="Naam op de kaart" /></div>
+            <div class="d-lg-flex justify-content-between align-items-start">
+              <div class="form-check mb-20">
+                <input class="form-check-input" type="checkbox" value="" id="check3" />
+                <label class="form-check-label" for="check3">Gebruik zelfde adres als verzendadres</label>
+              </div>
+              <button type="submit" class="btn btn-dark">Betaal nu<img src="images/icons/ico-arrow-btn.svg" alt="" /></button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="cart-footer">
+      <p>&copy; Copyright Venticare 2011-2023</p>
+    </div>
+  </div>
+
+  <div class="cart-sidebar">
+    <div class="cart-sidebar-title">Winkelmand</div>
+    <div class="cp-cart-item cp-cart-item--white">
+      <div class="cp-cart-item-image"><img src="images/img44.jpg" alt="" /></div>
+      <div class="cp-cart-item-text">
+        <div class="cp-cart-item-title">Beademing, een praktische handleiding</div>
+        <div class="cp-cart-item-subtitle">Handleiding</div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="cp-cart-item-price">&euro;26</div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-subtotal">
+      <ul>
+        <li>Verzending <span>Gratis</span></li>
+        <li>Totaal <span>&euro;26,00</span></li>
+      </ul>
+    </div>
+    <div class="cart-code">
+      <button type="button" class="btn-cart-code" data-bs-toggle="modal" data-bs-target="#codeModal">Ik heb een kortingscode</button>
+    </div>
+    <div class="cart-total">
+      <ul>
+        <li>
+          Totaal
+          <p>&euro;26,00 (inclusief &euro;3,62 BTW)</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade cp-code-modal" id="codeModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="fs-20 text-center mb-20">Vul hier je code in</div>
+        <form action="#">
+          <div class="mb-2">
+            <input type="text" placeholder="Kortingscode" class="form-control" />
+          </div>
+          <div class="mb-2">
+            <button type="submit" class="btn btn-dark">Toevoegen<img src="images/icons/ico-arrow-btn.svg" alt="" /></button>
+          </div>
+          <button type="reset" class="btn-reset" data-bs-dismiss="modal">Annuleren</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

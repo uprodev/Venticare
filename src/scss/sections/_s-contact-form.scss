@@ -1,0 +1,42 @@
+.s-contact-form {
+  .form-control,
+  .form-select {
+    border-radius: 0;
+    border-color: $white;
+    border-bottom-color: rgba(30, 30, 30, 0.2);
+    font-size: 1rem;
+    letter-spacing: 0.32px;
+    padding-left: 0.5rem;
+  }
+
+  .form-select {
+    font-weight: 700;
+  }
+
+  .gform_wrapper.gravity-theme {
+    .gform_fields {
+      grid-row-gap: 27px;
+    }
+
+    .gform_footer {
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+
+    .gfield {
+      input.large {
+        @extend .form-control;
+      }
+      select.large {
+        @extend .form-select;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .form-select {
+      background-position: right 2rem center;
+    }
+  }
+}

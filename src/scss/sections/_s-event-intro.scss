@@ -1,0 +1,19 @@
+.s-event-intro {
+  h2 {
+    margin: 0 auto 20px;
+    max-width: 1007px;
+  }
+
+  p {
+    margin: 0 auto;
+    max-width: 887px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 7px 0 0;
+
+    h2 {
+      margin: 0 auto 37px;
+    }
+  }
+}

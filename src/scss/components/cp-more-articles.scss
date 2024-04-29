@@ -1,0 +1,59 @@
+.cp-more-articles {
+  @extend .rounded;
+  background-color: $white;
+  padding: 26px 0 20px 18px;
+
+  h4 {
+    margin: 0 0 5px;
+  }
+
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: myCounter;
+
+    li {
+      padding: 19px 0 8px 27px;
+      position: relative;
+      border-bottom: 1px solid #ededed;
+
+      &:before {
+        counter-increment: myCounter;
+        content: counter(myCounter);
+        position: absolute;
+        left: 0;
+        top: 19px;
+        width: 27px;
+        color: $primary;
+        font-weight: 700;
+      }
+
+      &:last-child {
+        border: none;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    ol {
+      font-size: 15px;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    ol {
+      line-height: 2.13;
+
+      li {
+        padding-bottom: 13px;
+
+        &:before {
+          font-size: 18px;
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+}

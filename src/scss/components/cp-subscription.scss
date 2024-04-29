@@ -1,0 +1,103 @@
+.cp-subscription {
+  padding: 35px 20px;
+
+  .cp-subscription-text {
+    .subtitle {
+      font-weight: 500;
+      line-height: 28px;
+    }
+
+    h2 {
+      line-height: 1.286;
+    }
+  }
+
+  .cp-subscription-form {
+    .form-control {
+      color: $white;
+      background-color: transparent;
+      border-color: rgba(255, 255, 255, 0.4);
+      background-image: url(../images/icons/ico-mail.svg);
+      background-position: 17px 50%;
+      background-repeat: no-repeat;
+      padding-left: 58px;
+
+      @include placeholder($white, 0.5);
+    }
+
+    .cp-subscription-input {
+      width: 100%;
+      margin: 0 0 20px;
+      letter-spacing: 0.3px;
+    }
+
+    .gform_wrapper.gravity-theme {
+      .gform_footer {
+        margin: 20px 0 0;
+        padding: 0;
+
+        .cp-subscription-submit {
+          .btn {
+            font-size: 20px;
+            border-radius: 7px;
+            margin: 0;
+          }
+        }
+      }
+
+      .gfield {
+        input.large {
+          @extend .form-control;
+          @extend .form-control-lg;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .cp-subscription-form {
+      .cp-subscription-input {
+        margin: 0;
+        padding: 0 10px 0 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .cp-subscription-text {
+      padding: 0 20px 0 0;
+
+      h2 {
+        margin: 0;
+      }
+    }
+
+    .cp-subscription-form {
+      width: 544px;
+      flex-shrink: 0;
+
+      .cp-subscription-submit {
+        .btn {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 50px 99px 59px 70px;
+
+    .cp-subscription-text {
+      padding: 0 115px 0 0;
+
+      .subtitle {
+        font-size: 20px;
+        margin: 0 0 14px;
+      }
+    }
+  }
+}

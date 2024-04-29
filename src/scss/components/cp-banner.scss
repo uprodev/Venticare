@@ -1,0 +1,9 @@
+.cp-banner {
+  a {
+    display: block;
+  }
+
+  img {
+    @extend .img-fluid;
+  }
+}
